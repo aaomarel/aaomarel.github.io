@@ -2,7 +2,9 @@ body {
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, Garamond, serif;
-    background-color: white;
+    background-image: url("silverware.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 h1, h2 {
@@ -44,4 +46,5 @@ pre {
 
 abbr {
     text-decoration: underline;
+    cursor: help;
 }
