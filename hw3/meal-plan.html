@@ -1,0 +1,39 @@
+meal-plan.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan - Dine On Campus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Meal Plan</h1>
+        <nav>
+            <a href="index.html" class = "cta-button">Back to Home</a>
+        </nav>
+    </header>
+    
+    <main class="meal-plan-container">
+        <section class="menu-list">
+            <h2>Available Dishes</h2>
+            <ul id="available-dishes">
+                <!-- Will be populated by JavaScript -->
+            </ul>
+        </section>
+        
+        <section class="selected-meals">
+            <h2>Your Meal Plan</h2>
+            <div id="selected-meals-list"></div>
+            <div id="total-cost">Total: $0.00</div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Dine On Campus</p>
+    </footer>
+    
+    <script src="meal-plan.js"></script>
+</body>
+</html>

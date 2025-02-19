@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+  Name: Ahmed Omar Eltai
+  Date: 02.18.2025
+  CSC 372-01
+
+  This is the main page for the "Dine On Campus" project. It includes a list of food recommendations near UNCG's Petty Building.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dine On Campus</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dine On Campus</h1>
+      <p>Discover the best food spots near UNCG's Petty Building!</p>
+      <nav>
+        <a href="meal-plan.html" class="cta-button">Create a Meal Plan</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="introduction">
+        <p>
+          Welcome to your ultimate guide to dining near UNCG's Petty Building!
+          Are you tired of the same old lunch routine and looking for exciting
+          culinary adventures right around campus? We've carefully curated a
+          list of the most exceptional dishes within walking distance that are
+          sure to tantalize your taste buds. From classic American comfort food
+          to refreshing treats, our recommendations cover everything you need
+          for a satisfying meal between classes. Whether you're a busy student
+          on a budget or a faculty member looking for quick yet delicious
+          options, this guide will help you discover the hidden gems of campus
+          dining.
+        </p>
+      </section>
+
+      <section>
+        <article class="restaurant">
+          <h2>Yum Yum Better Ice Cream</h2>
+          <p>
+            <strong>Location:</strong> 1219 Spring Garden St, Greensboro, NC
+            27412
+          </p>
+          <p><strong>Specialties:</strong> Ice Cream, Hot Dogs</p>
+          <div class="dish-gallery">
+            <button
+              class="dish"
+              onclick="selectDish('hotdog')"
+              onkeypress="selectDish('hotdog')"
+              onkeydown="selectDish('hotdog')"
+              onkeyup="selectDish('hotdog')"
+            >
+              <img src="images/hotdog.jpg" alt="Hot Dog" />
+            </button>
+            <button
+              class="dish"
+              onclick="selectDish('vanilla')"
+              onkeypress="selectDish('vanilla')"
+              onkeydown="selectDish('vanilla')"
+              onkeyup="selectDish('vanilla')"
+            >
+              <img src="images/vanilla.jpg" alt="Vanilla Ice Cream" />
+            </button>
+            <button
+              class="dish"
+              onclick="selectDish('milkshake')"
+              onkeypress="selectDish('milkshake')"
+              onkeydown="selectDish('milkshake')"
+              onkeyup="selectDish('milkshake')"
+            >
+              <img src="images/milkshake.jpg" alt="Strawberry Milkshake" />
+            </button>
+          </div>
+          <div class="dish-description"></div>
+        </article>
+
+        <article class="restaurant">
+          <h2>Old Town Draught House</h2>
+          <p>
+            <strong>Location:</strong> 1205 Spring Garden St, Greensboro, NC
+            27412
+          </p>
+          <p><strong>Specialties:</strong> Pub Food, Burgers</p>
+          <div class="dish-gallery">
+            <button
+              class="dish"
+              onclick="selectDish('burger')"
+              onkeypress="selectDish('burger')"
+            >
+              <img src="images/burger.jpg" alt="Classic Burger" />
+            </button>
+            <button
+              class="dish"
+              onclick="selectDish('wings')"
+              onkeypress="selectDish('wings')"
+            >
+              <img src="images/wings.jpg" alt="Buffalo Wings" />
+            </button>
+            <button
+              class="dish"
+              onclick="selectDish('fries')"
+              onkeypress="selectDish('fries')"
+            >
+              <img src="images/fries.jpg" alt="Loaded Fries" />
+            </button>
+          </div>
+          <div class="dish-description"></div>
+        </article>
+
+        <article class="restaurant">
+          <h2>Coffeeology</h2>
+          <p><strong>Location:</strong> 423 Tate St, Greensboro, NC 27403</p>
+          <p><strong>Specialties:</strong> Coffee, Pastries</p>
+          <div class="dish-gallery">
+            <button
+              class="dish"
+              onclick="selectDish('latte')"
+              onkeypress="selectDish('latte')"
+            >
+              <img src="images/latte.jpg" alt="Caramel Latte" />
+            </button>
+            <button
+              class="dish"
+              onclick="selectDish('muffin')"
+              onkeypress="selectDish('muffin')"
+            >
+              <img src="images/muffin.jpg" alt="Blueberry Muffin" />
+            </button>
+            <button
+              class="dish"
+              onclick="selectDish('sandwich')"
+              onkeypress="selectDish('sandwich')"
+            >
+              <img src="images/sandwich.jpg" alt="Breakfast Sandwich" />
+            </button>
+          </div>
+          <div class="dish-description"></div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Dine On Campus</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
