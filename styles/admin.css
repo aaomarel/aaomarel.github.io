@@ -93,4 +93,91 @@ table th {
     padding: 0;
 }
 
-.product-lis
+.product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.delete-button {
+    background: #dc3545;
+}
+
+.delete-button:hover {
+    background: #c82333;
+}
+
+input[type="file"], 
+input[type="text"], 
+input[type="number"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: inherit;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#add-product-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+}
+
+#add-product-button:hover {
+    background-color: #0069d9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+pre {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: auto;
+    font-size: 14px;
+}
