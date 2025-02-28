@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - TechHaven</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">TechHaven</a>
+            <div class="nav-links">
+                <div class="categories-menu">
+                    <a href="#">Categories</a>
+                    <div class="dropdown">
+                        <a href="#">Smartphones</a>
+                        <a href="#">Laptops</a>
+                        <a href="#">Tablets</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                </div>
+                <a href="products.html">All Products</a>
+                <a href="cart.html">Cart</a>
+                <a href="#">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title">Shopping Cart</h1>
+            <div class="cart-container">
+                
+                <!-- Item 1 -->
+                <div class="cart-item">
+                    <img src="images/products/smartphone.jpg" alt="Premium Smartphone">
+                    <div class="item-details">
+                        <h2>Premium Smartphone</h2>
+                        <p class="item-price">$999.99</p>
+                        <div class="quantity-control">
+                            <label for="quantity-1">Quantity:</label>
+                            <input type="number" id="quantity-1" name="quantity" value="1" min="1">
+                        </div>
+                        <button class="remove-item">Remove</button>
+                    </div>
+                    <p class="item-total">$999.99</p>
+                </div>
+                
+                <!-- Item 2 with quantity=2 -->
+                <div class="cart-item">
+                    <img src="images/products/earbuds.jpg" alt="Wireless Earbuds Pro">
+                    <div class="item-details">
+                        <h2>Wireless Earbuds Pro</h2>
+                        <p class="item-price">$199.99</p>
+                        <div class="quantity-control">
+                            <label for="quantity-2">Quantity:</label>
+                            <input type="number" id="quantity-2" name="quantity" value="2" min="1">
+                        </div>
+                        <button class="remove-item">Remove</button>
+                    </div>
+                    <p class="item-total">$399.98</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="cart-item">
+                    <img src="images/products/smartwatch.jpg" alt="Smart Watch">
+                    <div class="item-details">
+                        <h2>Smart Watch Series X</h2>
+                        <p class="item-price">$349.99</p>
+                        <div class="quantity-control">
+                            <label for="quantity-3">Quantity:</label>
+                            <input type="number" id="quantity-3" name="quantity" value="1" min="1">
+                        </div>
+                        <button class="remove-item">Remove</button>
+                    </div>
+                    <p class="item-total">$349.99</p>
+                </div>
+                
+                <!-- Summary -->
+                <div class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-line">
+                        <span>Subtotal:</span>
+                        <span>$1,749.96</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Tax (6.75%):</span>
+                        <span>$118.87</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Delivery Fee:</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Service Fee:</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="summary-line total">
+                        <span>Total:</span>
+                        <span>$1,868.83</span>
+                    </div>
+                    <button class="checkout-button">Proceed to Checkout</button>
+                    <a href="products.html" class="continue-shopping">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TechHaven. All rights reserved.</p>
+    </footer>
+    
+    <script src="js/cart.js"></script>
+</body>
+</html>
