@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Product Listing - TechHaven</title>
+    <link rel="stylesheet" href="../styles/admin.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../admin/admin-products.html" class="logo">TechHaven Admin</a>
+            <div class="nav-links">
+                <a href="admin-upload.html">Bulk Upload</a>
+                <a href="admin-products.html">Product Listing</a>
+                <a href="#">Sign Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Product Listing</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a product..." id="search-input">
+            <button id="search-button">Search</button>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Premium Smartphone</td>
+                    <td>Latest model with advanced features.</td>
+                    <td>Smartphones</td>
+                    <td><img src="../images/products/smartphone.jpg" alt="Smartphone" class="thumbnail-image"></td>
+                    <td>$999.99</td>
+                    <td>
+                        <button onclick="window.location.href='product-edit.html?id=1'">Edit</button>
+                        <button class="delete-button" data-id="1">Delete</button>
+                        <button>Archive</button>
+                        <a href="../details.html?id=1">View Details</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>High-End Laptop</td>
+                    <td>Powerful laptop for professionals.</td>
+                    <td>Laptops</td>
+                    <td><img src="../images/products/laptop.jpg" alt="Laptop" class="thumbnail-image"></td>
+                    <td>$1499.99</td>
+                    <td>
+                        <button onclick="window.location.href='product-edit.html?id=2'">Edit</button>
+                        <button class="delete-button" data-id="2">Delete</button>
+                        <button>Archive</button>
+                        <a href="../details.html?id=2">View Details</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Latest Tablet</td>
+                    <td>Portable tablet with high performance.</td>
+                    <td>Tablets</td>
+                    <td><img src="../images/products/tablet.jpg" alt="Tablet" class="thumbnail-image"></td>
+                    <td>$599.99</td>
+                    <td>
+                        <button onclick="window.location.href='product-edit.html?id=3'">Edit</button>
+                        <button class="delete-button" data-id="3">Delete</button>
+                        <button>Archive</button>
+                        <a href="../details.html?id=3">View Details</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="add-product-button" onclick="window.location.href='product-edit.html'">Add New Product</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TechHaven Admin. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product - TechHaven Admin</title>
+    <link rel="stylesheet" href="../styles/admin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">TechHaven Admin</a>
+            <div class="nav-links">
+                <a href="admin-upload.html">Bulk Upload</a>
+                <a href="admin-products.html">Product Listing</a>
+                <a href="#">Sign Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Edit Product</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="product-id">Product ID (not editable)</label>
+                <input type="text" id="product-id" name="product-id" value="12345" readonly>
+            </div>
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" name="product-name" value="Premium Smartphone">
+            </div>
+            <div class="form-group">
+                <label for="product-description">Description</label>
+                <textarea id="product-description" name="product-description">Experience the future of mobile technology with our latest premium smartphone.</textarea>
+            </div>
+            <div class="form-group">
+                <label for="category-id">Category ID</label>
+                <input type="text" id="category-id" name="category-id" value="Smartphones">
+            </div>
+            <div class="form-group">
+                <label for="image-path">Image Path</label>
+                <input type="text" id="image-path" name="image-path" value="images/products/smartphone.jpg">
+            </div>
+            <div class="form-group">
+                <label for="product-price">Price</label>
+                <input type="text" id="product-price" name="product-price" value="$999.99">
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TechHaven Admin. All rights reserved.</p>
+    </footer>
+</body>
+</html>
