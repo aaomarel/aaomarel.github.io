@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Bulk Upload - TechHaven</title>
+    <link rel="stylesheet" href="../styles/admin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">TechHaven Admin</a>
+            <div class="nav-links">
+                <a href="admin-upload.html">Bulk Upload</a>
+                <a href="admin-products.html">Product Listing</a>
+                <a href="#">Sign Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bulk Upload Products</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="file-upload">Select a file to upload:</label>
+            <input type="file" id="file-upload" name="file-upload" accept=".json, .csv, .txt" required>
+            <button type="submit">Upload</button>
+        </form>
+        
+        <h2>Accepted File Formats</h2>
+        <p>Please upload your product data in one of the following formats:</p>
+        <ul>
+            <li>JSON</li>
+            <li>CSV</li>
+            <li>Text</li>
+        </ul>
+        
+        <h2>Example File Format</h2>
+        <pre>
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Premium Smartphone",
+            "description": "Latest model with advanced features.",
+            "category": "Smartphones",
+            "image": "images/products/smartphone.jpg",
+            "price": 999.99
+        },
+        {
+            "id": "2",
+            "name": "Gaming Laptop",
+            "description": "High performance for gaming and work.",
+            "category": "Laptops",
+            "image": "images/products/laptop.jpg",
+            "price": 1499.99
+        }
+    ]
+}
+        </pre>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TechHaven Admin. All rights reserved.</p>
+    </footer>
+</body>
+</html>
