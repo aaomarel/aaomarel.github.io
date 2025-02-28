@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background: #575757;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.admin-container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+    max-width: 500px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    border-radius: 0 4px 4px 0;
+    padding: 8px 15px;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+.thumbnail-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.delete-button {
+    background: #dc3545;
+}
+
+.delete-button:hover {
+    background: #c82333;
+}
+
+input[type="file"], 
+input[type="text"], 
+input[type="number"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: inherit;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#add-product-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+}
+
+#add-product-button:hover {
+    background-color: #0069d9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+pre {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: auto;
+    font-size: 14px;
+}
