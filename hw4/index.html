@@ -1,22 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <h1>ROCK - PAPER - SCISSORS </h1>
-    <div class = "choices">
-        <button onclick="playGame('Rock')">🪨</button>
-        <button onclick = "playGame('Paper')">🗞️</button>
-        <button onclick = "playGame('Scissors')">✂️</button>
+    <h1>ROCK - PAPER - SCISSORS</h1>
+    
+    <!-- Player section -->
+    <section class="game-section">
+        <h2>Your Move</h2>
+        <div class="choices">
+            <figure class="player-choice" data-choice="Rock">
+                <img src="images/rock.png" alt="Rock">
+                <figcaption>Rock</figcaption>
+            </figure>
+            <figure class="player-choice" data-choice="Paper">
+                <img src="images/paper.png" alt="Paper">
+                <figcaption>Paper</figcaption>
+            </figure>
+            <figure class="player-choice" data-choice="Scissors">
+                <img src="images/scissors.png" alt="Scissors">
+                <figcaption>Scissors</figcaption>
+            </figure>
         </div>
-        Choose your weapon above and face the fearsome computer!
-        <div id = "playerDisplay"> </div>
-        <div id = "computerDisplay"></div>
-        <div id = "result"></div>
-    <script src = "index.js"></script>
+    </section>
+    
+    <!-- Computer section -->
+    <section class="game-section">
+        <h2>Computer's Move</h2>
+        <div id="computer-choice">
+            <img src="images/question.png" alt="Question Mark" id="computer-image">
+        </div>
+    </section>
+    
+    <!-- Result section -->
+    <section class="game-section">
+        <h2>Result</h2>
+        <div id="result">
+            Make your move to start the game!
+        </div>
+    </section>
+    
+    <!-- Score section (for extra credit) -->
+    <section class="game-section score-section">
+        <h2>Score</h2>
+        <div class="score-container">
+            <div class="score-box">
+                <h3>Wins</h3>
+                <p id="wins-count">0</p>
+            </div>
+            <div class="score-box">
+                <h3>Ties</h3>
+                <p id="ties-count">0</p>
+            </div>
+            <div class="score-box">
+                <h3>Losses</h3>
+                <p id="losses-count">0</p>
+            </div>
+        </div>
+        <button id="reset-button">Reset Score</button>
+    </section>
+
+    <script src="index.js"></script>
 </body>
 </html>
