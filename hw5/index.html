@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>GitHub Repository Gallery</h1>
+        <div class="search-container">
+            <input type="text" id="username-input" placeholder="Enter GitHub username">
+            <button id="search-button"><i class="fas fa-search"></i> Search</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="profile-info"></div>
+        <div id="repositories-container" class="repository-gallery"></div>
+        <div id="error-message"></div>
+        <div id="loading">
+            <div class="spinner"></div>
+            <p>Loading repositories...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>CSC372: Web Development - Assignment 5</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
