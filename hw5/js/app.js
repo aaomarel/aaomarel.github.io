@@ -40,6 +40,19 @@ async function fetchGitHubData(username) {
     try {
         // Fetch user profile information
         const userResponse = await fetch(getUserUrl(username));
+        
+        // Check for rate limit
+        if (userResponse.status === 403) {
+            const rateLimitReset = userResponse.headers.get('x-ratelimit-reset');
+            if (rateLimitReset) {
+                const resetTime = new Date(parseInt(rateLimitReset) * 1000);
+                const formattedTime = resetTime.toLocaleTimeString();
+                throw new Error(`GitHub API rate limit exceeded. Try again after ${formattedTime} or consider using authentication for more requests.`);
+            } else {
+                throw new Error('GitHub API rate limit exceeded. Try again in an hour.');
+            }
+        }
+        
         if (!userResponse.ok) {
             throw new Error(`User not found: ${username}`);
         }
